@@ -10,6 +10,14 @@
   @include mq(mob-only) {
     justify-content: space-between;
   }
+
+  @include mq(tab) {
+    padding: 10px 32px;
+  }
+
+  @include mq(desk) {
+    padding: 10px 16px;
+  }
 }
 
 .nav {
@@ -37,7 +45,11 @@
   display: flex;
   gap: 28px;
   align-items: center;
-  margin-left: 185px;
+  margin-left: 188px;
+
+  @include mq(desk) {
+    margin-left: 732px;
+  }
 }
 
 .nav__item-link {
@@ -50,9 +62,15 @@
 
   color: var(--pure-black);
 
+  transition: color var(--cubic), text-decoration var(--cubic);
+
   &:hover {
     color: var(--button-green);
     text-decoration: underline;
+  }
+
+  @include mq(desk) {
+    color: var(--main-txt-color);
   }
 }
 
@@ -71,6 +89,8 @@
 
   background: var(--button-green);
   border-radius: 30px;
+
+  transition: background var(--cubic);
 
   &:hover,
   &:focus {
