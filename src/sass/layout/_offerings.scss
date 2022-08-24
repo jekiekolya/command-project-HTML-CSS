@@ -1,0 +1,24 @@
+.offerings__features {
+  display: flex;
+}
+
+.section__offerings {
+  background-image: url('../images/bg-img/img-bg1@1x_lg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.offerings {
+  display: flex;
+  align-items: center;
+}
+
+.offerings__img {
+  margin-top: 177px;
+  margin-bottom: 75px;
+}
+
+.offerings__content {
+  margin-left: 90px;
+}
