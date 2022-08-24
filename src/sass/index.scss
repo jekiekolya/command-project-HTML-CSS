@@ -7,15 +7,20 @@
 @import './utils/common';
 
 // MAIN PAGE COMPONENTS
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/common';
+
+// LAYOut
 // Header
-@import './components/header';
+@import './layout/header';
 
 // Main
-@import './components/hero';
-@import './components/offerings';
-@import './components/favorites';
-@import './components/customers-say';
-@import './components/subscribe';
+@import './layout/hero';
+@import './layout/offerings';
+@import './layout/favorites';
+@import './layout/customers-say';
+@import './layout/subscribe';
 
 // Footer
-@import './components/footer';
+@import './layout/footer';
