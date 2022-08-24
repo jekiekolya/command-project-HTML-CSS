@@ -1,2 +1,21 @@
-@import './common';
-@import './header';
+// COMMON AND RESET
+@import './utils/normalize';
+@import './utils/reset';
+@import './utils/decimals';
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/common';
+
+// MAIN PAGE COMPONENTS
+// Header
+@import './components/header';
+
+// Main
+@import './components/hero';
+@import './components/offerings';
+@import './components/favorites';
+@import './components/customers-say';
+@import './components/subscribe';
+
+// Footer
+@import './components/footer';
