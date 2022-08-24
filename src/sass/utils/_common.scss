@@ -1,3 +1,59 @@
 body {
   background-color: var(--main-bg-color);
+  color: var(--main-txt-color);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+button {
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: $mobile;
+  padding: 0 20px;
+
+  @include mq(tab) {
+    max-width: $tablet;
+    padding: 0 32px;
+  }
+
+  @include mq(desk) {
+    max-width: $desktop;
+    padding: 0 32px;
+  }
+}
+
+.container--center {
+  @include mq(desk) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.section {
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include mq(tab) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
