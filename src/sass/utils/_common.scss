@@ -36,7 +36,7 @@ button {
 
   @include mq(desk) {
     max-width: $desktop;
-    padding: 0 32px;
+    padding: 0 16px;
   }
 }
 
