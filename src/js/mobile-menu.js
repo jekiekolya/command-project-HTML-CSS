@@ -11,4 +11,10 @@
   function toggleModal() {
     refs.modal.classList.toggle('is-open');
   }
+
+  window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
+    if (!e.matches) return;
+    refs.modal.classList.remove('is-open');
+    openModalBtn.setAttribute('aria-expanded', false);
+  });
 })();

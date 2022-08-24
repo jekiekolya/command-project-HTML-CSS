@@ -4,23 +4,89 @@
 
 .header__container {
   display: flex;
-  padding: 22px 20px;
+  align-items: center;
+  padding: 10px 20px;
+
+  @include mq(mob-only) {
+    justify-content: space-between;
+  }
+}
+
+.nav {
+  display: flex;
+  width: auto;
   justify-content: space-between;
 }
 
+.nav__link {
+  display: block;
+  height: 100%;
+}
+
 .nav__logo {
-  height: 28px;
-  width: 28px;
+  display: flex;
+  height: 52px;
+  width: 71px;
 }
 
 .nav__list {
   @include mq(mob-only) {
     display: none;
   }
+
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  margin-left: 185px;
+}
+
+.nav__item-link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+
+  font-size: 14px;
+  line-height: 1.14;
+
+  color: var(--pure-black);
+
+  &:hover {
+    color: var(--button-green);
+    text-decoration: underline;
+  }
 }
 
 .nav__button {
   @include mq(mob-only) {
+    display: none;
+  }
+  display: block;
+  width: 100px;
+  height: 32px;
+  margin-left: 28px;
+  line-height: 1.5;
+  font-size: 16px;
+  padding: 0;
+  border: 0;
+
+  background: var(--button-green);
+  border-radius: 30px;
+
+  &:hover,
+  &:focus {
+    background: var(--button-green-hover);
+  }
+}
+
+.header__burger {
+  display: flex;
+  align-items: center;
+
+  border: none;
+  padding: 0;
+  background-color: transparent;
+
+  @include mq(tab) {
     display: none;
   }
 }
@@ -40,19 +106,31 @@
   background-color: transparent;
   pointer-events: none;
 
+  font-size: 16px;
+  line-height: 1.19;
+
+  color: var(--pure-black);
+
   transition: opacity 500ms linear;
+
+  @include mq(tab) {
+    display: none;
+  }
 }
 
 .mobile-menu__list {
   position: absolute;
   top: 50px;
   right: 20px;
-  width: 130px;
+  width: 40vw;
+  max-width: 200px;
   height: 255px;
-  background-color: teal;
+  background-color: var(--main-bg-color);
   border-radius: 30px 0px 30px 30px;
+  box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
 
   z-index: 10;
+  overflow: hidden;
 }
 
 .is-open {
@@ -60,7 +138,11 @@
   pointer-events: all;
 }
 
-.mobile-menu__item {
-  height: calc(100% / 5);
+.mobile-menu__link {
+  display: block;
   padding: 16px;
+
+  &:active {
+    background-color: var(--button-green);
+  }
 }
