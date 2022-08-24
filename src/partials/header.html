@@ -1,11 +1,10 @@
 <header class="header">
-  <div class="container">
+  <div class="header__container container">
     <nav class="nav">
       <a href="./index.html">
         <svg class="nav__logo">
-          <use></use>
+          <use href="./images/sprite.svg#icon-touch_app"></use>
         </svg>
-        тут буде іконка лого
       </a>
 
       <ul class="nav__list">
@@ -18,11 +17,23 @@
     </nav>
     <button class="nav__button" type="button">Order Now</button>
 
+    <div class="mobile-menu js-menu-container" data-modal data-modal-close>
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item"><a href="">Home</a></li>
+        <li class="mobile-menu__item"><a href="">About</a></li>
+        <li class="mobile-menu__item"><a href="">Service</a></li>
+        <li class="mobile-menu__item"><a href="">Menu</a></li>
+        <li class="mobile-menu__item"><a href="">Contact</a></li>
+      </ul>
+    </div>
+
     <div>
-      тут буде іконка бургера
-      <svg class="header__burger-icon">
-        <use></use>
-      </svg>
+      <button type="button" class="js-open-menu" data-modal-open>
+        <svg class="header__burger-icon">
+          <use href="./images/sprite.svg#icon-touch_app"></use>
+        </svg>
+      </button>
     </div>
   </div>
 </header>
+<script src="./js/mobile-menu.js"></script>
