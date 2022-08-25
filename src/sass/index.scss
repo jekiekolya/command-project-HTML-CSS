@@ -7,9 +7,9 @@
 @import './utils/common';
 
 // MAIN PAGE COMPONENTS
-@import './utils/variables';
-@import './utils/mixins';
-@import './utils/common';
+@import './components/buttons';
+@import './components/forms';
+@import './components/modals';
 
 // LAYOut
 // Header

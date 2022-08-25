@@ -1,0 +1,50 @@
+%btn {
+  font-weight: 400;
+  font-size: 14;
+  line-height: 1.5;
+}
+
+.primary-btn {
+  @extend %btn;
+  width: 100px;
+  height: 32px;
+
+  background: var(--button-green);
+  border: none;
+  border-radius: 30px;
+
+  &:hover,
+  &:focus {
+    background: var(--button-green-hover);
+  }
+}
+
+.secondary-btn {
+  @extend %btn;
+  width: 130px;
+  height: 40px;
+
+  background: var(--pure-white);
+  border: 2px solid var(--dark-green);
+  border-radius: 30px;
+
+  &:hover,
+  &:focus {
+    border: 2px solid var(--dark-green-hover);
+  }
+}
+
+.subscribe-btn {
+  @extend %btn;
+  width: 102px;
+  height: 42px;
+
+  background: var(--pure-white);
+  border: 1px solid var(--dark-green);
+  border-radius: 30px;
+
+  &:hover,
+  &:focus {
+    background: var(--yellow-main);
+  }
+}
