@@ -1,17 +1,13 @@
 .section__offerings {
   background-image: url('../images/bg-img/img-bg1@1x_sm.svg');
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background-size: cover;
 
   @include mq(retina) {
     background-image: url('../images/bg-img/img-bg1@2x_sm.svg');
   }
 
   @include mq(tab) {
-    // width: 768px;
-    // height: 1140px;
-
     background-image: url('../images/bg-img/img-bg1@1x_md.svg');
 
     @include mq(retina) {
@@ -21,13 +17,13 @@
 
   @include mq(desk) {
     background-image: url('../images/bg-img/img-bg1@1x_lg.svg');
-    @include mq(tab) {
+    @include mq(retina) {
       background-image: url('../images/bg-img/img-bg1@2x_lg.svg');
     }
   }
 }
 
-.offerings {
+.section__offerings {
   display: block;
 
   @include mq(desk) {
@@ -37,12 +33,12 @@
 
 .offerings__img {
   display: block;
-  margin-top: 41px;
+  // margin-top: 41px;
 
   @include mq(tab) {
-    margin-left: 32px;
-    margin-right: 32px;
-    margin-top: 150px;
+    // margin-left: 32px;
+    // margin-right: 32px;
+    // margin-top: 150px;
   }
 
   @include mq(desk) {
