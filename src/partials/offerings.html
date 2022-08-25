@@ -1,21 +1,40 @@
 <section class="section">
   <div class="container section__offerings">
     <div class="offerings">
-      <img
-        class="offerings__img"
-        srcset="
-          ./images/offerings/apple-lg_550.png   550w,
-          ./images/offerings/apple-md_357.png   357w,
-          ./images/offerings/apple-sm_280.png   280w,
-          ./images/offerings/apple-lg_1100.png 1100w,
-          ./images/offerings/apple-md_714.png   714w,
-          ./images/offerings/apple-sm_560.png   560w
-        "
-        sizes="(min-width: 1200px) 550px, (min-width: 768px) 357px, (min-width: 320px) 280px, 100vw"
-        src="./images/offerings/apple-lg_550.png"
-        alt="Фото яблука"
-      />
-
+      <picture>
+        <source
+          srcset="
+            ./images/offerings/apple-lg_550.png  1x,
+            ./images/offerings/apple-lg_1100.png 2x
+          "
+          media="(min-width: 1200px)"
+          type="image/png"
+        />
+        <source
+          srcset="
+            ./images/offerings/apple-md_357.png 1x,
+            ./images/offerings/apple-md_714.png 2x
+          "
+          media="(min-width: 768px)"
+          type="image/png"
+        />
+        <source
+          srcset="
+            ./images/offerings/apple-sm_280.png 1x,
+            ./images/offerings/apple-sm_560.png 2x
+          "
+          media="(max-width: 767px)"
+          type="image/png"
+        />
+        <img
+          class="offerings__img"
+          src="./images/offerings/apple-lg_550.png"
+          alt="Green apple"
+          width="550"
+          height="604"
+          loading="lazy"
+        />
+      </picture>
       <div class="offerings__content">
         <h2 class="section__title section__offerings-title">
           What’s Special About Our Offerings
@@ -28,9 +47,11 @@
 
         <ul class="offerings__features">
           <li class="offerings__item">
-            <svg width="48" height="48">
-              <use href="./images/sprite.svg#icon-rocket_launch"></use>
-            </svg>
+            <div class="offerings__wrapper">
+              <svg class="offerings__icon">
+                <use href="./images/sprite.svg#icon-deliv"></use>
+              </svg>
+            </div>
             <h4 class="offerings__title">Fastest Delivery</h4>
             <p class="offerings__content-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -38,9 +59,11 @@
             </p>
           </li>
           <li class="offerings__item">
-            <svg width="48" height="48">
-              <use href="./images/sprite.svg#icon-touch_app"></use>
-            </svg>
+            <div class="offerings__wrapper">
+              <svg class="offerings__icon">
+                <use href="./images/sprite.svg#icon-order"></use>
+              </svg>
+            </div>
             <h4 class="offerings__title">Easy To Order</h4>
             <p class="offerings__content-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
