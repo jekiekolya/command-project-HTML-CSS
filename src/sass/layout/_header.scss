@@ -45,10 +45,10 @@
   display: flex;
   gap: 28px;
   align-items: center;
-  margin-left: 188px;
+  margin-left: 162px;
 
   @include mq(desk) {
-    margin-left: 732px;
+    margin-left: 706px;
   }
 }
 
