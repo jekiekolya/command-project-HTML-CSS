@@ -66,6 +66,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include mq(mob-only) {
+    width: calc(100% / 3);
+  }
 }
 
 .menu-thumb__label {
@@ -80,8 +84,8 @@
   margin-bottom: 10px;
 
   @include mq(mob-only) {
-    width: 70px;
-    height: 70px;
+    width: 68px;
+    height: 68px;
   }
 }
 
@@ -119,7 +123,7 @@
 .order-form__textarea {
   border: 2px solid var(--yellow-main);
   border-radius: 10px;
-  padding-left: 15px;
+  padding: 10px 15px;
   resize: none;
 
   transition: border var(--cubic);
