@@ -27,7 +27,7 @@
   gap: 20px;
 
   @include mq(tab) {
-    gap: 31px;
+    gap: 32px;
   }
 }
 
@@ -43,7 +43,7 @@
   border-radius: 139.658px;
 
   @include mq(tab) {
-    width: 336px;
+    width: calc((100% - (32px * 1)) / 2);
     height: 338px;
 
     border: 14px solid var(--yellow-main);
@@ -51,7 +51,7 @@
   }
 
   @include mq(desk) {
-    width: 395px;
+    width: calc((100% - (32px * 2)) / 3);
     height: 397px;
 
     border: 16px solid var(--yellow-main);
@@ -79,6 +79,5 @@
 
   @include mq(desk) {
     width: 315px;
-    height: 315px;
   }
 }
