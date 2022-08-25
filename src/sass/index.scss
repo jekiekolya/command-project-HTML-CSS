@@ -14,8 +14,7 @@
 // LAYOut
 // Header
 @import './layout/header';
-
-// Main
+@import './components/page-nav';
 @import './layout/hero';
 @import './layout/offerings';
 @import './layout/favorites';
