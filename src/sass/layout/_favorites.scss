@@ -1,9 +1,3 @@
-.favorite {
-  @include mq(desk) {
-    padding-bottom: 141px;
-  }
-}
-
 .favorite__title {
   margin-bottom: 20px;
 

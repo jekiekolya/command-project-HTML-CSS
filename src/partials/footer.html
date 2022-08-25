@@ -2,7 +2,11 @@
   <div class="container">
     <div class="footer__top">
       <div class="footer__logo-nav">
-        <a href="">Тут лого</a>
+        <a href="">
+          <svg class="" width="69" height="51">
+            <use href="./images/sprite.svg#icon-logo"></use>
+          </svg>
+        </a>
 
         <nav class="nav footer__nav">
           <ul class="nav__list nav__list--footer">
@@ -27,10 +31,27 @@
 
       <!-- Form -->
       <h2 class="footer__form-title">Subscribe</h2>
-      Тут форма
-      <form class="footer__form" action=""></form>
 
-      <button class="footer__button" type="submit">Subscribe</button>
+      <form class="form-subscribe" name="form-subscribe">
+        <input
+          class="form-subscribe__input"
+          type="email"
+          name="user-mail"
+          autocomplete="off"
+          placeholder="Enter your email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          required
+        />
+        <span class="form-subscribe__msg">
+          <svg class="" width="12" height="12">
+            <use href="./images/sprite.svg#icon-warning"></use>
+          </svg>
+          Not a valid email address (example@email.com)
+        </span>
+        <button class="subscribe-btn footer__subscribe-btn" type="submit">
+          Subscribe
+        </button>
+      </form>
 
       <p class="footer__agreement">
         By subscribing you agree to with our

@@ -1,7 +1,24 @@
+.footer {
+  padding-top: 64px;
+  padding-bottom: 60px;
+
+  background-image: url('../images/footer/mob_@1x.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+
+  box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
+
+  @include mq(retina) {
+    background-image: url('../images/footer/mob_@2x.png');
+  }
+}
+
 .footer__top {
   display: flex;
   align-items: baseline;
   flex-wrap: wrap;
+  width: 100%;
 
   @include mq(mob-only) {
     flex-direction: column;
@@ -12,7 +29,7 @@
 
 .footer__logo-nav {
   display: flex;
-  align-items: baseline;
+  align-items: flex-start;
 }
 
 .footer__form-title {
@@ -34,12 +51,12 @@
   color: var(--dark-green);
 }
 
-.footer__form {
+.footer__subscribe-btn {
+  display: block;
+  margin-left: auto;
   margin-bottom: 20px;
-}
 
-.footer__button {
-  margin-bottom: 20px;
+  color: var(--main-txt-color);
 }
 
 .footer__bottom {
