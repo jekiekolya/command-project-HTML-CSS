@@ -40,25 +40,25 @@
   width: 71px;
 }
 
-.nav__list {
+.header__list {
+  height: 100%;
+  gap: 28px;
+  align-items: center;
+
   @include mq(mob-only) {
     display: none;
   }
 
-  height: 100%;
-  display: flex;
-  gap: 28px;
-  align-items: center;
-
-  @include mq(desk) {
+  @include mq(tab) {
+    display: flex;
   }
 }
 
-.nav__item {
+.header__item {
   height: 100%;
 }
 
-.nav__item-link {
+.header__item-link {
   position: relative;
   display: flex;
   align-items: center;
@@ -104,24 +104,9 @@
   @include mq(mob-only) {
     display: none;
   }
-  display: block;
-  width: 100px;
-  height: 32px;
+
   margin-left: 28px;
-  line-height: 1.5;
-  font-size: 16px;
   padding: 0;
-  border: 0;
-
-  background: var(--button-green);
-  border-radius: 30px;
-
-  transition: background var(--cubic);
-
-  &:hover,
-  &:focus {
-    background: var(--button-green-hover);
-  }
 }
 
 .header__burger {
