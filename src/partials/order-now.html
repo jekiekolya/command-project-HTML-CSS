@@ -265,27 +265,40 @@
       </div>
       <div class="order-thumb">
         <label class="order-form">
-          <span>Type your name</span>
-          <input
-            class="order-form__username-input"
-            type="text"
-            name="Username"
-          />
+          <span class="order-form__text">Type your name:</span>
+          <input class="order-form__input" type="text" name="Username" />
         </label>
         <label class="order-form">
-          <span>Type your phone nubmer</span>
-          <input class="order-form__phone-input" type="text" name="Username" />
+          <span class="order-form__text">Type your phone nubmer:</span>
+          <input class="order-form__input" type="text" name="Username" />
         </label>
         <label class="order-form">
-          <span>Type your delivery adress</span>
-          <input class="order-form__adress-input" type="text" name="Username" />
+          <span class="order-form__text">Type your delivery adress:</span>
+          <input class="order-form__input" type="text" name="Username" />
         </label>
         <label class="order-form">
-          <span>If necessary, leave a comment</span>
-          <textarea name="comment" rows="6"></textarea>
+          <span class="order-form__text"
+            >If necessary, leave a comment here:</span
+          >
+          <textarea
+            class="order-form__textarea"
+            name="comment"
+            rows="6"
+          ></textarea>
         </label>
       </div>
-      <button class="primary-btn" type="button"></button>
+      <button
+        onclick="newWindow()"
+        class="order-button primary-btn"
+        type="button"
+      >
+        Order
+      </button>
     </form>
   </div>
 </div>
+<script>
+  function newWindow() {
+    window.location.href = 'https://www.google.com.ua/';
+  }
+</script>

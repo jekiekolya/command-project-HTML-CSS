@@ -2,12 +2,12 @@
   position: fixed;
   top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  z-index: 10;
 }
 
 .hidden {
@@ -55,6 +55,10 @@
 .menu-thumb {
   display: flex;
   justify-content: space-between;
+
+  @include mq(mob-only) {
+    flex-wrap: wrap;
+  }
 }
 
 .menu-thumb__item {
@@ -74,6 +78,11 @@
   width: 80px;
   height: 80px;
   margin-bottom: 10px;
+
+  @include mq(mob-only) {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 .order-thumb {
@@ -87,4 +96,46 @@
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+
+.order-form__text {
+  padding-left: 13px;
+}
+
+.order-form__input {
+  height: 35px;
+  border: 2px solid var(--yellow-main);
+  border-radius: 10px;
+  padding-left: 15px;
+
+  transition: border var(--cubic);
+
+  &:focus {
+    border: 2px solid var(--dark-green);
+    outline: none;
+  }
+}
+
+.order-form__textarea {
+  border: 2px solid var(--yellow-main);
+  border-radius: 10px;
+  padding-left: 15px;
+  resize: none;
+
+  transition: border var(--cubic);
+
+  &:focus {
+    border: 2px solid var(--dark-green);
+    outline: none;
+  }
+}
+
+.order-button {
+  display: block;
+  font-size: 25px;
+  height: 50px;
+  width: 150px;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
