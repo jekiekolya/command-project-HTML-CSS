@@ -5,53 +5,261 @@
       type="button"
       data-modal-close-order
     ></button>
-    <form>
-      <p>What would you like to order?</p>
+    <form class="order-form">
+      <p class="order-form__header">What would you like to order?</p>
       <div class="menu-thumb">
         <div class="menu-thumb__item">
-          <label>
-            <input
-              class="menu-thumb__input"
-              type="checkbox"
-              name="dish"
-              value="burger"
-            />
-            Burger
+          <label class="menu-thumb__label">
+            <div class="menu-thumb__photo">
+              <picture>
+                <!-- desktop scren -->
+                <source
+                  srcset="
+                    ./images/favorites/img1-lg_315.png 1x,
+                    ./images/favorites/img1-lg_630.png 2x
+                  "
+                  media="(min-width: 1280px)"
+                  type="image/png"
+                />
+                <!-- tableb scren -->
+                <source
+                  srcset="
+                    ./images/favorites/img1-md_268.png 1x,
+                    ./images/favorites/img1-md_536.png 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/png"
+                />
+                <!-- mobile scren -->
+                <source
+                  srcset="
+                    ./images/favorites/img1-sm_224.png 1x,
+                    ./images/favorites/img1-sm_448.png 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/png"
+                />
+                <img
+                  class="favorite__pic"
+                  src="./images/favorites/img1-sm_224.png"
+                  alt="burger"
+                  width="224"
+                  height="224"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div>
+              <input
+                class="menu-thumb__input"
+                type="checkbox"
+                name="dish"
+                value="burger"
+              />
+              Burger
+            </div>
           </label>
         </div>
 
         <div class="menu-thumb__item">
-          <label>
-            <input type="checkbox" name="dish" value="pasta" />
-            Pasta
+          <label class="menu-thumb__label">
+            <div class="menu-thumb__photo">
+              <picture>
+                <!-- desktop scren -->
+                <source
+                  srcset="
+                    ./images/favorites/img2-lg_315.png 1x,
+                    ./images/favorites/img2-lg_630.png 2x
+                  "
+                  media="(min-width: 1280px)"
+                  type="image/png"
+                />
+                <!-- tableb scren -->
+                <source
+                  srcset="
+                    ./images/favorites/img2-md_268.png 1x,
+                    ./images/favorites/img2-md_536.png 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/png"
+                />
+                <!-- mobile scren -->
+                <source
+                  srcset="
+                    ./images/favorites/img2-sm_224.png 1x,
+                    ./images/favorites/img2-sm_448.png 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/png"
+                />
+                <img
+                  class="favorite__pic"
+                  src="./images/favorites/img2-sm_224.png"
+                  alt="burger"
+                  width="224"
+                  height="224"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div><input type="checkbox" name="dish" value="pasta" /> Pasta</div>
           </label>
         </div>
 
         <div class="menu-thumb__item">
-          <label>
-            <input type="checkbox" name="dish" value="pizza" />
-            Pizza
+          <label class="menu-thumb__label">
+            <div class="menu-thumb__photo">
+              <picture>
+                <!-- desktop scren -->
+                <source
+                  srcset="
+                    ./images/favorites/img3-lg_315.png 1x,
+                    ./images/favorites/img3-lg_630.png 2x
+                  "
+                  media="(min-width: 1280px)"
+                  type="image/png"
+                />
+                <!-- tableb scren -->
+                <source
+                  srcset="
+                    ./images/favorites/img3-md_268.png 1x,
+                    ./images/favorites/img3-md_536.png 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/png"
+                />
+                <!-- mobile scren -->
+                <source
+                  srcset="
+                    ./images/favorites/img3-sm_224.png 1x,
+                    ./images/favorites/img3-sm_448.png 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/png"
+                />
+                <img
+                  class="favorite__pic"
+                  src="./images/favorites/img3-sm_224.png"
+                  alt="burger"
+                  width="224"
+                  height="224"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div><input type="checkbox" name="dish" value="pizza" /> Pizza</div>
           </label>
         </div>
 
         <div class="menu-thumb__item">
-          <label>
-            <input type="checkbox" name="dish" value="rice" />
-            Rice
+          <label class="menu-thumb__label">
+            <div class="menu-thumb__photo">
+              <picture>
+                <!-- desktop scren -->
+                <source
+                  srcset="
+                    ./images/favorites/img4-lg_315.png 1x,
+                    ./images/favorites/img4-lg_630.png 2x
+                  "
+                  media="(min-width: 1280px)"
+                  type="image/png"
+                />
+                <!-- tableb scren -->
+                <source
+                  srcset="
+                    ./images/favorites/img4-md_268.png 1x,
+                    ./images/favorites/img4-md_536.png 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/png"
+                />
+                <!-- mobile scren -->
+                <img
+                  class="favorite__pic"
+                  src="./images/favorites/img4-md_268.png"
+                  alt="burger"
+                  width="224"
+                  height="224"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div><input type="checkbox" name="dish" value="rice" /> Rice</div>
           </label>
         </div>
 
         <div class="menu-thumb__item">
-          <label>
-            <input type="checkbox" name="dish" value="salad" />
-            Salad
+          <label class="menu-thumb__label">
+            <div class="menu-thumb__photo">
+              <picture>
+                <!-- desktop scren -->
+                <source
+                  srcset="
+                    ./images/favorites/img5-lg_315.png 1x,
+                    ./images/favorites/img5-lg_630.png 2x
+                  "
+                  media="(min-width: 1280px)"
+                  type="image/png"
+                />
+                <!-- tableb scren -->
+                <source
+                  srcset="
+                    ./images/favorites/img5-md_268.png 1x,
+                    ./images/favorites/img5-md_536.png 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/png"
+                />
+
+                <img
+                  class="favorite__pic"
+                  src="./images/favorites/img5-md_268.png"
+                  alt="burger"
+                  width="224"
+                  height="224"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div><input type="checkbox" name="dish" value="salad" /> Salad</div>
           </label>
         </div>
 
         <div class="menu-thumb__item">
-          <label>
-            <input type="checkbox" name="dish" value="borsch" />
-            Borsch
+          <label class="menu-thumb__label">
+            <div class="menu-thumb__photo">
+              <picture>
+                <!-- desktop scren -->
+                <source
+                  srcset="
+                    ./images/favorites/img6-lg_315.png 1x,
+                    ./images/favorites/img6-lg_630.png 2x
+                  "
+                  media="(min-width: 1280px)"
+                  type="image/png"
+                />
+                <!-- tableb scren -->
+                <source
+                  srcset="
+                    ./images/favorites/img6-md_268.png 1x,
+                    ./images/favorites/img6-md_536.png 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/png"
+                />
+                <img
+                  class="favorite__pic"
+                  src="./images/favorites/img6-md_268.png"
+                  alt="burger"
+                  width="224"
+                  height="224"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div>
+              <input type="checkbox" name="dish" value="borsch" /> Borsch
+            </div>
           </label>
         </div>
       </div>
