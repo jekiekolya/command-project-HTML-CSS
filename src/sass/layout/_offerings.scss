@@ -7,6 +7,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  // margin-top: -200px;
 }
 
 .offerings {
@@ -21,4 +22,39 @@
 
 .offerings__content {
   margin-left: 90px;
+}
+
+.offerings__features {
+  display: flex;
+  gap: 67px;
+  margin-right: 51px;
+}
+
+.section__offerings-title {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: calc(50 / 42);
+  color: var(--main-txt-color);
+  width: 526px;
+  margin-bottom: 20px;
+}
+
+.offerings__button {
+  @extend %btn;
+  width: 106px;
+}
+
+.offerings__text {
+  margin-bottom: 40px;
+  line-height: calc(24 / 16);
+  color: var(--main-txt-color);
+  width: 526px;
+}
+
+.offerings__content-text {
+  width: 253px;
+  font-size: 14px;
+  line-height: calc(21 / 14);
+  color: var(--main-txt-color);
+  margin-bottom: 32px;
 }
