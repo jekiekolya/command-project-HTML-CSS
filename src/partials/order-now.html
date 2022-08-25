@@ -5,7 +5,7 @@
       type="button"
       data-modal-close-order
     ></button>
-    <form class="order-form">
+    <form>
       <p class="order-form__header">What would you like to order?</p>
       <div class="menu-thumb">
         <div class="menu-thumb__item">
@@ -263,6 +263,29 @@
           </label>
         </div>
       </div>
+      <div class="order-thumb">
+        <label class="order-form">
+          <span>Type your name</span>
+          <input
+            class="order-form__username-input"
+            type="text"
+            name="Username"
+          />
+        </label>
+        <label class="order-form">
+          <span>Type your phone nubmer</span>
+          <input class="order-form__phone-input" type="text" name="Username" />
+        </label>
+        <label class="order-form">
+          <span>Type your delivery adress</span>
+          <input class="order-form__adress-input" type="text" name="Username" />
+        </label>
+        <label class="order-form">
+          <span>If necessary, leave a comment</span>
+          <textarea name="comment" rows="6"></textarea>
+        </label>
+      </div>
+      <button class="primary-btn" type="button"></button>
     </form>
   </div>
 </div>

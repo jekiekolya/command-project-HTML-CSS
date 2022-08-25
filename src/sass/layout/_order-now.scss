@@ -75,3 +75,16 @@
   height: 80px;
   margin-bottom: 10px;
 }
+
+.order-thumb {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
