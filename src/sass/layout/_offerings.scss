@@ -1,49 +1,51 @@
 .section__offerings {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.section__bg {
   background-image: url('../images/bg-img/img-bg1@1x_sm.svg');
   background-repeat: no-repeat;
-  background-size: cover;
-
-  @include mq(retina) {
-    background-image: url('../images/bg-img/img-bg1@2x_sm.svg');
-  }
+  background-size: 100% 100%;
+  background-position: center;
 
   @include mq(tab) {
     background-image: url('../images/bg-img/img-bg1@1x_md.svg');
-
-    @include mq(retina) {
-      background-image: url('../images/bg-img/img-bg1@2x_md.svg');
-    }
   }
 
   @include mq(desk) {
     background-image: url('../images/bg-img/img-bg1@1x_lg.svg');
-    @include mq(retina) {
-      background-image: url('../images/bg-img/img-bg1@2x_lg.svg');
-    }
   }
 }
 
-.section__offerings {
-  display: block;
+.offerings {
+  display: flex;
+  flex-direction: column;
 
   @include mq(desk) {
     display: flex;
+    flex-direction: row;
+  }
+}
+
+.offerings__pic {
+  align-self: center;
+
+  @include mq(desk) {
+    align-self: flex-end;
   }
 }
 
 .offerings__img {
   display: block;
-  // margin-top: 41px;
+  margin-top: 41px;
+  margin-bottom: 60px;
 
   @include mq(tab) {
-    // margin-left: 32px;
-    // margin-right: 32px;
-    // margin-top: 150px;
+    margin-top: 150px;
   }
 
   @include mq(desk) {
-    margin-top: 177px;
-    margin-left: 16px;
     margin-bottom: 75px;
   }
 }
@@ -55,16 +57,28 @@
     margin-bottom: 60px;
   }
   @include mq(desk) {
-    margin-left: 90px;
     margin-top: 260px;
+    margin-left: 90px;
+    margin-bottom: 131px;
   }
 }
 
 .offerings__features {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-bottom: 28px;
+
   @include mq(tab) {
     display: flex;
+    flex-direction: row;
+    gap: 116px;
+    margin-bottom: 40px;
+  }
+
+  @include mq(desk) {
     gap: 67px;
-    margin-right: 51px;
+    margin-bottom: 32px;
   }
 }
 
@@ -72,14 +86,15 @@
   font-size: 28px;
   line-height: calc(33 / 28);
   width: 280px;
+  margin-bottom: 20px;
 
   @include mq(tab) {
+    font-size: 42px;
     width: 526px;
     line-height: calc(49 / 42);
   }
 
   @include mq(desk) {
-    font-size: 42px;
     line-height: calc(50 / 42);
     margin-bottom: 20px;
   }
@@ -89,11 +104,13 @@
   font-size: 14px;
   margin-bottom: 28px;
   line-height: calc(16 / 14);
-  width: 272px;
+  width: 100%;
 
   @include mq(tab) {
+    font-size: 16px;
     margin-bottom: 40px;
     line-height: calc(19 / 16);
+    width: 526px;
   }
 
   @include mq(desk) {
@@ -102,9 +119,22 @@
   }
 }
 
+.offerings__title {
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  margin-bottom: 16px;
+
+  @include mq(desk) {
+    font-size: 17px;
+    line-height: calc(24 / 17);
+  }
+}
+
 .offerings__content-text {
   width: 272px;
+  font-size: 14px;
   line-height: calc(16 / 14);
+  width: 100%;
 
   @include mq(tab) {
     width: 252px;
@@ -114,7 +144,6 @@
     width: 253px;
     font-size: 14px;
     line-height: calc(21 / 14);
-    margin-bottom: 32px;
   }
 }
 
@@ -126,7 +155,11 @@
   height: 48px;
   background-color: var(--pure-white);
   border-radius: 50%;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+
+  @include mq(desk) {
+    margin-bottom: 10px;
+  }
 }
 
 .offerings__icon {
@@ -138,4 +171,22 @@
 .offerings__button {
   @extend %btn;
   width: 106px;
+  margin-right: 20px;
+}
+
+.offerings__link {
+  display: inline-block;
+  position: relative;
+  font-size: 13.67px;
+  list-style: calc(20 / 13.67);
+  color: var(--pure-black);
+
+  @include mq(desk) {
+    display: none;
+  }
+}
+
+.offerings__link-icon {
+  width: 9px;
+  height: 9px;
 }

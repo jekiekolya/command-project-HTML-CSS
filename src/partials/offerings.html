@@ -1,42 +1,42 @@
-<section class="section">
+<section id="offerings" class="section section__offerings section__bg">
   <div class="container">
-    <div class="section__offerings">
-      <picture>
-        <source
-          srcset="
-            ./images/offerings/apple-lg_550.png  1x,
-            ./images/offerings/apple-lg_1100.png 2x
-          "
-          media="(min-width: 1280px)"
-          type="image/png"
-        />
-        <source
-          srcset="
-            ./images/offerings/apple-box_@1x.png 1x,
-            ./images/offerings/apple-box_@2x.png 2x
-          "
-          media="(min-width: 768px)"
-          type="image/png"
-        />
-        <source
-          srcset="
-            ./images/offerings/apple-sm_280.png 1x,
-            ./images/offerings/apple-sm_560.png 2x
-          "
-          media="(max-width: 767px)"
-          type="image/png"
-        />
-        <img
-          class="offerings__img"
-          src="./images/offerings/apple-lg_550.png"
-          alt="Green apple"
-          width="550"
-          height="604"
-          loading="lazy"
-        />
-      </picture>
+    <div class="offerings">
+      <div class="offerings__pic">
+        <picture>
+          <source
+            srcset="
+              ./images/offerings/apple-lg_550.png  1x,
+              ./images/offerings/apple-lg_1100.png 2x
+            "
+            media="(min-width: 1280px)"
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./images/offerings/apple-box_@1x.png 1x,
+              ./images/offerings/apple-box_@2x.png 2x
+            "
+            media="(min-width: 768px)"
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./images/offerings/apple-sm_280.png 1x,
+              ./images/offerings/apple-sm_560.png 2x
+            "
+            media="(max-width: 767px)"
+            type="image/png"
+          />
+          <img
+            class="offerings__img"
+            src="./images/offerings/apple-lg_550.png"
+            alt="Green apple"
+            loading="lazy"
+          />
+        </picture>
+      </div>
       <div class="offerings__content">
-        <h2 class="section__title section__offerings-title">
+        <h2 class="section__offerings-title">
           What’s Special About Our Offerings
         </h2>
         <p class="offerings__text">
@@ -74,6 +74,16 @@
         <button class="offerings__button secondary-btn" type="button">
           Order now
         </button>
+        <a
+          class="offerings__link"
+          href=""
+          target="_blank"
+          rel="noreferrer noopener"
+          >Read More
+          <svg class="offerings__link-icon">
+            <use href="./images/sprite.svg#icon-arrow-left"></use>
+          </svg>
+        </a>
       </div>
     </div>
   </div>
