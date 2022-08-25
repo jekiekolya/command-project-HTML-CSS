@@ -1,3 +1,7 @@
+.form-subscribe {
+  display: flex;
+}
+
 .form-subscribe__input {
   padding: 12px;
   min-width: 279px;
@@ -28,6 +32,10 @@
 
   &:not(:placeholder-shown):invalid + .form-subscribe__msg {
     opacity: 1;
+  }
+  .subscribe & {
+    margin-right: 30px;
+    min-width: 395px;
   }
 }
 
