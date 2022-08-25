@@ -1,6 +1,14 @@
 .section__offerings {
   padding-top: 0;
   padding-bottom: 0;
+
+  @include mq(tab) {
+    margin-top: -31px;
+  }
+
+  @include mq(desk) {
+    margin-top: -148px;
+  }
 }
 
 .section__bg {
