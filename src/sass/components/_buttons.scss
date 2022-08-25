@@ -70,17 +70,5 @@
   @extend %btn;
   min-width: 102px;
   height: 42px;
-
   padding: 10px 22px;
-
-  background-color: var(--button-green);
-  border: 0;
-  border-radius: 30px;
-
-  transition: background-color var(--cubic);
-
-  &:hover,
-  &:focus {
-    background-color: var(--button-green-hover);
-  }
 }

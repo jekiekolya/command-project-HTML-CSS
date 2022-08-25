@@ -1,68 +1,72 @@
 <section class="section subscribe">
   <div class="container subscribe-container">
-    <h2 class="subscribe__title">Subscribe To Get Special Offers</h2>
-    <p class="subscribe__desc">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-      varius enim in eros elementum tristique.
-    </p>
-    <form class="form-subscribe">
-      <label for="email">
-        <input
-          class="form-subscribe__input"
-          type="email"
-          name="email"
-          placeholder="Enter your email"
-          autocomplete="off"
-          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-          required
+    <div class="subscribe-subcontainer">
+      <h2 class="subscribe__title">Subscribe To Get Special Offers</h2>
+      <p class="subscribe__desc">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique.
+      </p>
+      <form class="form-subscribe">
+        <label for="email">
+          <input
+            class="form-subscribe__input"
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            autocomplete="off"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            required
+          />
+          <span class="form-subscribe__msg">
+            <svg class="" width="12" height="12">
+              <use href="./images/sprite.svg#icon-warning"></use>
+            </svg>
+            Not a valid email address (example@email.com)
+          </span>
+        </label>
+        <button type="submit" class="primary-btn subscribe-btn-def">
+          Subscribe
+        </button>
+      </form>
+    </div>
+    <div class="subscribe__image">
+      <picture>
+        <!-- desktop scren -->
+        <source
+          srcset="
+            ./images/customers-say/banana-lg_546.png 1x,
+            ./images/customers-say/banana-lg1092.png 2x
+          "
+          media="(min-width: 1280px)"
+          type="image/png"
         />
-        <span class="form-subscribe__msg">
-          <svg class="" width="12" height="12">
-            <use href="./images/sprite.svg#icon-warning"></use>
-          </svg>
-          Not a valid email address (example@email.com)
-        </span>
-      </label>
-      <button type="submit" class="subscribe-btn-def">Subscribe</button>
-    </form>
-  </div>
-  <div class="container">
-    <picture>
-      <!-- desktop scren -->
-      <source
-        srcset="
-          ./images/customers-say/banana-lg_546.png 1x,
-          ./images/customers-say/banana-lg1092.png 2x
-        "
-        media="(min-width: 1280px)"
-        type="image/png"
-      />
-      <!-- tableb scren -->
-      <source
-        srcset="
-          ./images/customers-say/banana-md_281.png 1x,
-          ./images/customers-say/banana-md_562.png 2x
-        "
-        media="(min-width: 768px)"
-        type="image/png"
-      />
-      <!-- mobile scren -->
-      <source
-        srcset="
-          ./images/customers-say/banana-sm_161.png 1x,
-          ./images/customers-say/banana-sm_322.png 2x
-        "
-        media="(max-width: 767px)"
-        type="image/png"
-      />
-      <img
-        class="subscribe__pic"
-        src="./images/customers-say/banana-lg_546.png"
-        alt="banana"
-        width="592"
-        height="266"
-        loading="lazy"
-      />
-    </picture>
+        <!-- tableb scren -->
+        <source
+          srcset="
+            ./images/customers-say/banana-md_281.png 1x,
+            ./images/customers-say/banana-md_562.png 2x
+          "
+          media="(min-width: 768px)"
+          type="image/png"
+        />
+        <!-- mobile scren -->
+        <source
+          srcset="
+            ./images/customers-say/banana-sm_161.png 1x,
+            ./images/customers-say/banana-sm_322.png 2x
+          "
+          media="(max-width: 767px)"
+          type="image/png"
+        />
+        <img
+          class="subscribe__pic"
+          src="./images/customers-say/banana-lg_546.png"
+          alt="banana"
+          width="592"
+          height="266"
+          loading="lazy"
+        />
+      </picture>
+    </div>
   </div>
 </section>

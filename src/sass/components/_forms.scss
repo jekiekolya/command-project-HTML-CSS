@@ -5,7 +5,9 @@
 .form-subscribe__input {
   padding: 12px;
   min-width: 279px;
+  min-height: 42px;
   margin-bottom: 4px;
+  position: relative;
 
   font-size: 12px;
   color: var(--dark-grey);
@@ -43,6 +45,7 @@
   align-items: center;
   gap: 4px;
   font-size: 10px;
+  position: absolute;
 
   color: var(--warning-color);
   opacity: 0;
