@@ -7,6 +7,7 @@
 .primary-btn {
   @extend %btn;
   min-width: 100px;
+
   height: 32px;
 
   padding: 6px 16px;
@@ -25,6 +26,7 @@
 
 .secondary-btn {
   @extend %btn;
+
   min-width: 130px;
   height: 40px;
 
@@ -39,6 +41,10 @@
   &:hover,
   &:focus {
     border: 2px solid var(--dark-green-hover);
+  }
+
+  @include mq(desk) {
+    min-width: 106px;
   }
 }
 
