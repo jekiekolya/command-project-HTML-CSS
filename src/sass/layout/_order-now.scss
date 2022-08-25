@@ -27,7 +27,7 @@
 
   background-color: var(--main-bg-color);
 
-  padding: 40px;
+  padding: 20px 40px;
 
   border-radius: 10% 0 10% 10%;
 
@@ -104,6 +104,11 @@
 
 .order-form__text {
   padding-left: 13px;
+}
+
+.order-form__textarea:not(:placeholder-shown),
+.order-form__input:not(:placeholder-shown) {
+  border: 2px solid var(--dark-green);
 }
 
 .order-form__input {

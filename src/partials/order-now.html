@@ -1,10 +1,10 @@
 <div class="backdrope hidden" data-modal-order>
   <div class="modal">
-    <button
-      class="modal__button-close"
-      type="button"
-      data-modal-close-order
-    ></button>
+    <button class="modal__button-close" type="button" data-modal-close-order>
+      <svg>
+        <use href="./images/sprite.svg#icon-cross"></use>
+      </svg>
+    </button>
     <form>
       <p class="order-form__header">What would you like to order?</p>
       <div class="menu-thumb">
@@ -266,15 +266,31 @@
       <div class="order-thumb">
         <label class="order-form">
           <span class="order-form__text">Type your name:</span>
-          <input class="order-form__input" type="text" name="Username" />
+          <input
+            class="order-form__input"
+            type="text"
+            name="Username"
+            placeholder="Fill Richards"
+          />
         </label>
         <label class="order-form">
           <span class="order-form__text">Type your phone nubmer:</span>
-          <input class="order-form__input" type="text" name="Username" />
+          <input
+            class="order-form__input"
+            type="tel"
+            name="Username"
+            placeholder="+380"
+            required
+          />
         </label>
         <label class="order-form">
           <span class="order-form__text">Type your delivery adress:</span>
-          <input class="order-form__input" type="text" name="Username" />
+          <input
+            class="order-form__input"
+            type="text"
+            name="Username"
+            placeholder="Lviv, 13 Shevchenka st, flat 1"
+          />
         </label>
         <label class="order-form">
           <span class="order-form__text"
@@ -283,7 +299,8 @@
           <textarea
             class="order-form__textarea"
             name="comment"
-            rows="6"
+            rows="4"
+            placeholder="If you want to exclude some ingredient from the dish, write here"
           ></textarea>
         </label>
       </div>
