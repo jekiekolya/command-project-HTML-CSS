@@ -6,45 +6,63 @@
 
 .primary-btn {
   @extend %btn;
-  width: 100px;
+  min-width: 100px;
+
   height: 32px;
 
-  background: var(--button-green);
+  padding: 6px 16px;
+
+  background-color: var(--button-green);
   border: none;
   border-radius: 30px;
 
+  transition: background-color var(--cubic);
+
   &:hover,
   &:focus {
-    background: var(--button-green-hover);
+    background-color: var(--button-green-hover);
   }
 }
 
 .secondary-btn {
   @extend %btn;
-  width: 130px;
+
+  min-width: 130px;
   height: 40px;
+
+  padding: 8px 18px;
 
   background: var(--pure-white);
   border: 2px solid var(--dark-green);
   border-radius: 30px;
 
+  transition: border-color var(--cubic);
+
   &:hover,
   &:focus {
     border: 2px solid var(--dark-green-hover);
+  }
+
+  @include mq(desk) {
+    min-width: 106px;
   }
 }
 
 .subscribe-btn {
   @extend %btn;
-  width: 102px;
+  min-width: 102px;
   height: 42px;
 
-  background: var(--pure-white);
+  padding: 10px 19px;
+
+  background-color: var(--pure-white);
   border: 1px solid var(--dark-green);
   border-radius: 30px;
 
+  transition: background-color var(--cubic);
+
   &:hover,
   &:focus {
-    background: var(--yellow-main);
+    background-color: var(--yellow-main);
   }
 }
