@@ -137,6 +137,7 @@
 
 /* Style the back side */
 .flip-card__back {
+  display: none;
   @include mq(desk) {
     display: flex;
     flex-direction: column;
