@@ -48,9 +48,15 @@
     width: calc((100% - (32px * 2)) / 3);
     height: 397px;
 
-    border: 16px solid var(--yellow-main);
+    // border: 16px solid var(--yellow-main);
+    // border-radius: 197.5px;
+
+    border: none;
     border-radius: 197.5px;
   }
+}
+
+@include mq(desk) {
 }
 
 .favorite__item--is-hidden {
@@ -74,4 +80,107 @@
   @include mq(desk) {
     width: 315px;
   }
+}
+
+// FLIP CARD
+
+.flip-card {
+  @include mq(desk) {
+    background-color: transparent;
+    perspective: 1000px;
+  }
+}
+
+/* This container is needed to position the front and back side */
+.flip-card__inner {
+  @include mq(desk) {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    border: 16px solid var(--yellow-main);
+    border-radius: 197.5px;
+
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card__inner {
+  @include mq(desk) {
+    transform: rotateY(180deg);
+  }
+}
+
+/* Position the front and back side */
+.flip-card__front,
+.flip-card__back {
+  @include mq(desk) {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card__front {
+  @include mq(desk) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Style the back side */
+.flip-card__back {
+  display: none;
+  @include mq(desk) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 50px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    background-color: var(--yellow-main);
+    outline: 16px solid var(--yellow-main);
+    border-radius: 197.5px;
+
+    transform: rotateY(180deg);
+  }
+}
+
+.flip-card__title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+}
+
+.flip-card__desc {
+}
+
+.flip-card__price {
+  display: flex;
+  align-items: center;
+
+  font-size: 40px;
+  font-weight: 700;
+
+  color: var(--dark-green);
+}
+
+.flip-card__icon-flag {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+
+  transform: translateX(-50%);
 }
