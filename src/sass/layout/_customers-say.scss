@@ -1,5 +1,5 @@
 .customers__section {
-  padding: 60px 20px;
+  padding: 60px 0;
   min-height: 320px;
 
   @include mq(tab) {
@@ -70,7 +70,7 @@
   font-size: 16px;
   line-height: calc(19 / 16);
   margin-bottom: 40px;
-  margin-top: 32px;
+  margin-top: 28px;
 
   @include mq(tab) {
     font-size: 18px;
@@ -99,8 +99,8 @@
 .customers__reviews {
   display: flex;
   flex-direction: column;
-
-  justify-content: start;
+  justify-content: center;
+  align-items: center;
   gap: 24px;
   margin-bottom: 24px;
 
@@ -119,14 +119,14 @@
   }
 }
 .customers__item {
-  background-color: #fff;
-  width: 280px;
-  padding: 12px;
+  background-color: var(--pure-white);
+  width: 100%;
+  padding: 14px;
   border-radius: 30px;
   border-top-left-radius: 0;
 
   @include mq(tab) {
-    width: 501px;
+    width: 100%;
   }
 }
 .customer-profile {
