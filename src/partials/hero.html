@@ -1,0 +1,79 @@
+<section id="hero" class="section section__hero">
+  <div class="container">
+    <div class="hero__wrapper">
+      <div>
+        <h1 class="hero__title section__hero-title">
+          Enjoy Your Favorite Food From Anywhere
+        </h1>
+        <p class="hero__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+          ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+        </p>
+        <button class="hero__button primary-btn" type="button">
+          Order now
+        </button>
+      </div>
+      <div>
+        <picture>
+          <source
+            srcset="
+              ./images/img-hero/border-lg_580.png  1x,
+              ./images/img-hero/border-lg_1160.png 2x
+            "
+            media="(min-width: 1280px)"
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./images/img-hero/border-tab_320.png 1x,
+              ./images/img-hero/border-tab_640.png 2x
+            "
+            media="(min-width: 768px)"
+            type="image/png"
+          />
+          <img
+            class="hero__border"
+            src="./images/img-hero/border-lg_580.png"
+            alt="Yellow border"
+            loading="lazy"
+          />
+        </picture>
+        <picture>
+          <source
+            srcset="
+              ./images/img-hero/img1-lg_528.png  1x,
+              ./images/img-hero/img1-lg_1056.png 2x
+            "
+            media="(min-width: 1280px)"
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./images/img-hero/img1-md_292.png 1x,
+              ./images/img-hero/img1-md_584.png 2x
+            "
+            media="(min-width: 768px)"
+            type="image/png"
+          />
+          <img
+            class="hero__meal"
+            src="./images/img-hero/img1-lg_528.png"
+            alt="Meal"
+            loading="lazy"
+          />
+        </picture>
+      </div>
+      <div class="hero__arrow-left">
+        <svg class="hero__icon">
+          <use href="./images/sprite.svg#icon-arrow-left"></use>
+        </svg>
+      </div>
+      <div class="hero__arrow-right">
+        <svg class="hero__icon">
+          <use href="./images/sprite.svg#icon-arrow-right"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
