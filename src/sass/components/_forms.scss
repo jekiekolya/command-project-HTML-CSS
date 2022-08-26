@@ -1,7 +1,21 @@
+.form-subscribe__box {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  @include mq(mob-only) {
+    margin-bottom: 1px;
+  }
+
+  @include mq(tab) {
+    margin-bottom: 4px;
+  }
+}
+
 .form-subscribe__input {
-  padding: 12px;
+  padding: 13px;
   min-width: 279px;
-  margin-bottom: 4px;
+  height: 100%;
 
   font-size: 12px;
   color: var(--dark-grey);
@@ -39,8 +53,4 @@
   color: var(--warning-color);
   opacity: 0;
   transition: opacity var(--cubic);
-
-  @include mq(mob-only) {
-    margin-bottom: 1px;
-  }
 }
