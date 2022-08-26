@@ -70,7 +70,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 75px;
+  gap: 60px;
   border-radius: 50px;
   border: 10px solid var(--yellow-main);
   z-index: 10;
@@ -85,7 +85,7 @@
   }
 
   @include mq(desk) {
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 
