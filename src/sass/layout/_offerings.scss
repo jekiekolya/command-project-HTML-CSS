@@ -1,13 +1,17 @@
 .section__offerings {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 41px;
+  padding-bottom: 60px;
 
   @include mq(tab) {
     margin-top: -31px;
+    padding-top: 150px;
+    padding-bottom: 100px;
   }
 
   @include mq(desk) {
     margin-top: -145px;
+    padding-top: 177px;
+    padding-bottom: 75px;
   }
 }
 
@@ -33,6 +37,7 @@
   @include mq(desk) {
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
 }
 
@@ -46,28 +51,19 @@
 
 .offerings__img {
   display: block;
-  margin-top: 41px;
   margin-bottom: 60px;
 
   @include mq(tab) {
-    margin-top: 150px;
   }
 
   @include mq(desk) {
-    margin-bottom: 75px;
+    margin-bottom: 0;
   }
 }
 
 .offerings__content {
-  margin-bottom: 60px;
-
-  @include mq(tab) {
-    margin-bottom: 60px;
-  }
   @include mq(desk) {
-    margin-top: 260px;
     margin-left: 90px;
-    margin-bottom: 131px;
   }
 }
 
@@ -188,10 +184,6 @@
   font-size: 13.67px;
   list-style: calc(20 / 13.67);
   color: var(--pure-black);
-
-  @include mq(desk) {
-    display: none;
-  }
 }
 
 .offerings__link-icon {

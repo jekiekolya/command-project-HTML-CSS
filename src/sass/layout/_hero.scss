@@ -1,6 +1,10 @@
 .section__hero {
   padding-top: 60px;
-  padding-bottom: 0;
+  padding-bottom: 50px;
+
+  @include mq(tab) {
+    padding-bottom: 0;
+  }
 
   @include mq(desk) {
     padding-top: 14;
@@ -91,7 +95,9 @@
 }
 
 .hero__wrapper {
-  position: relative;
+  @include mq(tab) {
+    position: relative;
+  }
 
   @include mq(desk) {
     display: flex;
@@ -141,7 +147,6 @@
 .hero__button {
   display: inline-block;
   @extend %btn;
-  margin-bottom: 50px;
 
   @include mq(tab) {
     margin-bottom: 0;
