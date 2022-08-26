@@ -3,12 +3,46 @@
 }
 .subscribe-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  width: 100%;
+
+  @include mq(tab) {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  @include mq(desk) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 .subscribe-subcontainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
+
+  @include mq(tab) {
+    width: 100%;
+  }
+
+  @include mq(desk) {
+    width: 656px;
+  }
 }
+.subscribe__image {
+  display: flex;
+  align-self: center;
+  margin-bottom: 17px;
+
+  @include mq(tab) {
+    align-self: flex-end;
+  }
+}
+
 .subscribe__title {
   margin-bottom: 20px;
 
