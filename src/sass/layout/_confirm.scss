@@ -1,0 +1,120 @@
+.nav {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  display: block;
+}
+
+.nav__logo-icon {
+  display: flex;
+  height: 52px;
+  width: 71px;
+}
+
+.header {
+  box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px 20px;
+
+  @include mq(mob-only) {
+    justify-content: space-between;
+  }
+
+  @include mq(tab) {
+    height: 72px;
+    padding: 0px 32px;
+  }
+
+  @include mq(desk) {
+    padding: 0px 16px;
+  }
+}
+
+.primary-btn {
+  display: block;
+  font-weight: 400;
+  font-size: 14;
+  line-height: 1.5;
+  min-width: 100px;
+
+  text-align: center;
+  height: 32px;
+
+  padding: 6px 16px;
+
+  background-color: var(--button-green);
+  border: none;
+  border-radius: 30px;
+
+  transition: background-color var(--cubic);
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-green-hover);
+  }
+}
+
+.main {
+  position: relative;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 75px;
+  border-radius: 50px;
+  border: 10px solid var(--yellow-main);
+  z-index: 10;
+  background-color: var(--main-bg-color);
+}
+
+.main-text {
+  font-size: 20px;
+
+  @include mq(tab) {
+    font-size: 27px;
+  }
+
+  @include mq(desk) {
+    font-size: 35px;
+  }
+}
+
+.main-text--link {
+  padding: 15px 50px;
+  background: var(--button-green);
+  transition: background var(--cubic);
+  border-radius: 30px;
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-green-hover);
+  }
+}
+
+.footer {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  height: 266px;
+  width: 100%;
+  background-image: url('../images/footer/desk_@1x.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 100%;
+
+  @include mq(retina) {
+    background-image: url('../images/footer/desk_@2x.png');
+  }
+}

@@ -6,214 +6,328 @@
     </p>
 
     <ul class="favorite__list">
-      <li class="favorite__item">
-        <picture>
-          <!-- desktop scren -->
-          <source
-            srcset="
-              ./images/favorites/img1-lg_315.png 1x,
-              ./images/favorites/img1-lg_630.png 2x
-            "
-            media="(min-width: 1280px)"
-            type="image/png"
-          />
-          <!-- tableb scren -->
-          <source
-            srcset="
-              ./images/favorites/img1-md_268.png 1x,
-              ./images/favorites/img1-md_536.png 2x
-            "
-            media="(min-width: 768px)"
-            type="image/png"
-          />
-          <!-- mobile scren -->
-          <source
-            srcset="
-              ./images/favorites/img1-sm_224.png 1x,
-              ./images/favorites/img1-sm_448.png 2x
-            "
-            media="(max-width: 767px)"
-            type="image/png"
-          />
-          <img
-            class="favorite__pic"
-            src="./images/favorites/img1-sm_224.png"
-            alt="burger"
-            width="224"
-            height="224"
-            loading="lazy"
-          />
-        </picture>
+      <li class="favorite__item flip-card">
+        <div class="flip-card__inner">
+          <picture class="flip-card__front">
+            <!-- desktop scren -->
+            <source
+              srcset="
+                ./images/favorites/img1-lg_315.png 1x,
+                ./images/favorites/img1-lg_630.png 2x
+              "
+              media="(min-width: 1280px)"
+              type="image/png"
+            />
+            <!-- tableb scren -->
+            <source
+              srcset="
+                ./images/favorites/img1-md_268.png 1x,
+                ./images/favorites/img1-md_536.png 2x
+              "
+              media="(min-width: 768px)"
+              type="image/png"
+            />
+            <!-- mobile scren -->
+            <source
+              srcset="
+                ./images/favorites/img1-sm_224.png 1x,
+                ./images/favorites/img1-sm_448.png 2x
+              "
+              media="(max-width: 767px)"
+              type="image/png"
+            />
+            <img
+              class="favorite__pic"
+              src="./images/favorites/img1-sm_224.png"
+              alt="burger"
+              width="224"
+              height="224"
+              loading="lazy"
+            />
+          </picture>
+          <div class="flip-card__back">
+            <svg width="50" height="50" class="flip-card__icon-flag">
+              <use href="./images/sprite.svg#icon-USA"></use>
+            </svg>
+            <p class="flip-card__title">burger</p>
+            <p class="flip-card__desc">
+              The incomparable meaty taste of the cutlet, the freshness of the
+              greens and the crispness of the vegetables, the piquancy of the
+              sauce.
+            </p>
+            <p class="flip-card__price">
+              <span>5</span>
+              <svg width="50" height="50" class="flip-card__icon">
+                <use href="./images/sprite.svg#icon-dollar"></use>
+              </svg>
+            </p>
+          </div>
+        </div>
       </li>
-      <li class="favorite__item">
-        <picture>
-          <!-- desktop scren -->
-          <source
-            srcset="
-              ./images/favorites/img2-lg_315.png 1x,
-              ./images/favorites/img2-lg_630.png 2x
-            "
-            media="(min-width: 1280px)"
-            type="image/png"
-          />
-          <!-- tableb scren -->
-          <source
-            srcset="
-              ./images/favorites/img2-md_268.png 1x,
-              ./images/favorites/img2-md_536.png 2x
-            "
-            media="(min-width: 768px)"
-            type="image/png"
-          />
-          <!-- mobile scren -->
-          <source
-            srcset="
-              ./images/favorites/img2-sm_224.png 1x,
-              ./images/favorites/img2-sm_448.png 2x
-            "
-            media="(max-width: 767px)"
-            type="image/png"
-          />
-          <img
-            class="favorite__pic"
-            src="./images/favorites/img2-sm_224.png"
-            alt="burger"
-            width="224"
-            height="224"
-            loading="lazy"
-          />
-        </picture>
+      <li class="favorite__item flip-card">
+        <div class="flip-card__inner">
+          <picture class="flip-card__front">
+            <!-- desktop scren -->
+            <source
+              srcset="
+                ./images/favorites/img2-lg_315.png 1x,
+                ./images/favorites/img2-lg_630.png 2x
+              "
+              media="(min-width: 1280px)"
+              type="image/png"
+            />
+            <!-- tableb scren -->
+            <source
+              srcset="
+                ./images/favorites/img2-md_268.png 1x,
+                ./images/favorites/img2-md_536.png 2x
+              "
+              media="(min-width: 768px)"
+              type="image/png"
+            />
+            <!-- mobile scren -->
+            <source
+              srcset="
+                ./images/favorites/img2-sm_224.png 1x,
+                ./images/favorites/img2-sm_448.png 2x
+              "
+              media="(max-width: 767px)"
+              type="image/png"
+            />
+            <img
+              class="favorite__pic"
+              src="./images/favorites/img2-sm_224.png"
+              alt="burger"
+              width="224"
+              height="224"
+              loading="lazy"
+            />
+          </picture>
+          <div class="flip-card__back">
+            <svg width="50" height="50" class="flip-card__icon-flag">
+              <use href="./images/sprite.svg#icon-italy"></use>
+            </svg>
+            <p class="flip-card__title">Pasta</p>
+            <p class="flip-card__desc">
+              The incomparable meaty taste of the cutlet, the freshness of the
+              greens and the crispness of the vegetables, the piquancy of the
+              sauce.
+            </p>
+            <p class="flip-card__price">
+              <span>4</span>
+              <svg width="50" height="50" class="flip-card__icon">
+                <use href="./images/sprite.svg#icon-dollar"></use>
+              </svg>
+            </p>
+          </div>
+        </div>
       </li>
-      <li class="favorite__item">
-        <picture>
-          <!-- desktop scren -->
-          <source
-            srcset="
-              ./images/favorites/img3-lg_315.png 1x,
-              ./images/favorites/img3-lg_630.png 2x
-            "
-            media="(min-width: 1280px)"
-            type="image/png"
-          />
-          <!-- tableb scren -->
-          <source
-            srcset="
-              ./images/favorites/img3-md_268.png 1x,
-              ./images/favorites/img3-md_536.png 2x
-            "
-            media="(min-width: 768px)"
-            type="image/png"
-          />
-          <!-- mobile scren -->
-          <source
-            srcset="
-              ./images/favorites/img3-sm_224.png 1x,
-              ./images/favorites/img3-sm_448.png 2x
-            "
-            media="(max-width: 767px)"
-            type="image/png"
-          />
-          <img
-            class="favorite__pic"
-            src="./images/favorites/img3-sm_224.png"
-            alt="burger"
-            width="224"
-            height="224"
-            loading="lazy"
-          />
-        </picture>
+      <li class="favorite__item flip-card">
+        <div class="flip-card__inner">
+          <picture class="flip-card__front">
+            <!-- desktop scren -->
+            <source
+              srcset="
+                ./images/favorites/img3-lg_315.png 1x,
+                ./images/favorites/img3-lg_630.png 2x
+              "
+              media="(min-width: 1280px)"
+              type="image/png"
+            />
+            <!-- tableb scren -->
+            <source
+              srcset="
+                ./images/favorites/img3-md_268.png 1x,
+                ./images/favorites/img3-md_536.png 2x
+              "
+              media="(min-width: 768px)"
+              type="image/png"
+            />
+            <!-- mobile scren -->
+            <source
+              srcset="
+                ./images/favorites/img3-sm_224.png 1x,
+                ./images/favorites/img3-sm_448.png 2x
+              "
+              media="(max-width: 767px)"
+              type="image/png"
+            />
+            <img
+              class="favorite__pic"
+              src="./images/favorites/img3-sm_224.png"
+              alt="burger"
+              width="224"
+              height="224"
+              loading="lazy"
+            />
+          </picture>
+          <div class="flip-card__back">
+            <svg width="50" height="50" class="flip-card__icon-flag">
+              <use href="./images/sprite.svg#icon-USA"></use>
+            </svg>
+            <p class="flip-card__title">Pizza</p>
+            <p class="flip-card__desc">
+              The incomparable meaty taste of the cutlet, the freshness of the
+              greens and the crispness of the vegetables, the piquancy of the
+              sauce.
+            </p>
+            <p class="flip-card__price">
+              <span>7</span>
+              <svg width="50" height="50" class="flip-card__icon">
+                <use href="./images/sprite.svg#icon-dollar"></use>
+              </svg>
+            </p>
+          </div>
+        </div>
       </li>
-      <li class="favorite__item favorite__item--is-hidden">
-        <picture>
-          <!-- desktop scren -->
-          <source
-            srcset="
-              ./images/favorites/img4-lg_315.png 1x,
-              ./images/favorites/img4-lg_630.png 2x
-            "
-            media="(min-width: 1280px)"
-            type="image/png"
-          />
-          <!-- tableb scren -->
-          <source
-            srcset="
-              ./images/favorites/img4-md_268.png 1x,
-              ./images/favorites/img4-md_536.png 2x
-            "
-            media="(min-width: 768px)"
-            type="image/png"
-          />
-          <!-- mobile scren -->
-          <img
-            class="favorite__pic"
-            src="./images/favorites/img4-md_268.png"
-            alt="burger"
-            width="224"
-            height="224"
-            loading="lazy"
-          />
-        </picture>
+      <li class="favorite__item flip-card favorite__item--is-hidden">
+        <div class="flip-card__inner">
+          <picture class="flip-card__front">
+            <!-- desktop scren -->
+            <source
+              srcset="
+                ./images/favorites/img4-lg_315.png 1x,
+                ./images/favorites/img4-lg_630.png 2x
+              "
+              media="(min-width: 1280px)"
+              type="image/png"
+            />
+            <!-- tableb scren -->
+            <source
+              srcset="
+                ./images/favorites/img4-md_268.png 1x,
+                ./images/favorites/img4-md_536.png 2x
+              "
+              media="(min-width: 768px)"
+              type="image/png"
+            />
+            <!-- mobile scren -->
+            <img
+              class="favorite__pic"
+              src="./images/favorites/img4-md_268.png"
+              alt="burger"
+              width="224"
+              height="224"
+              loading="lazy"
+            />
+          </picture>
+          <div class="flip-card__back">
+            <svg width="50" height="50" class="flip-card__icon-flag">
+              <use href="./images/sprite.svg#icon-india"></use>
+            </svg>
+            <p class="flip-card__title">Rice</p>
+            <p class="flip-card__desc">
+              The incomparable meaty taste of the cutlet, the freshness of the
+              greens and the crispness of the vegetables, the piquancy of the
+              sauce.
+            </p>
+            <p class="flip-card__price">
+              <span>4</span>
+              <svg width="50" height="50" class="flip-card__icon">
+                <use href="./images/sprite.svg#icon-dollar"></use>
+              </svg>
+            </p>
+          </div>
+        </div>
       </li>
-      <li class="favorite__item favorite__item--is-hidden">
-        <picture>
-          <!-- desktop scren -->
-          <source
-            srcset="
-              ./images/favorites/img5-lg_315.png 1x,
-              ./images/favorites/img5-lg_630.png 2x
-            "
-            media="(min-width: 1280px)"
-            type="image/png"
-          />
-          <!-- tableb scren -->
-          <source
-            srcset="
-              ./images/favorites/img5-md_268.png 1x,
-              ./images/favorites/img5-md_536.png 2x
-            "
-            media="(min-width: 768px)"
-            type="image/png"
-          />
+      <li class="favorite__item flip-card favorite__item--is-hidden">
+        <div class="flip-card__inner">
+          <picture class="flip-card__front">
+            <!-- desktop scren -->
+            <source
+              srcset="
+                ./images/favorites/img5-lg_315.png 1x,
+                ./images/favorites/img5-lg_630.png 2x
+              "
+              media="(min-width: 1280px)"
+              type="image/png"
+            />
+            <!-- tableb scren -->
+            <source
+              srcset="
+                ./images/favorites/img5-md_268.png 1x,
+                ./images/favorites/img5-md_536.png 2x
+              "
+              media="(min-width: 768px)"
+              type="image/png"
+            />
 
-          <img
-            class="favorite__pic"
-            src="./images/favorites/img5-md_268.png"
-            alt="burger"
-            width="224"
-            height="224"
-            loading="lazy"
-          />
-        </picture>
+            <img
+              class="favorite__pic"
+              src="./images/favorites/img5-md_268.png"
+              alt="burger"
+              width="224"
+              height="224"
+              loading="lazy"
+            />
+          </picture>
+          <div class="flip-card__back">
+            <svg width="50" height="50" class="flip-card__icon-flag">
+              <use href="./images/sprite.svg#icon-france"></use>
+            </svg>
+            <p class="flip-card__title">Salad</p>
+            <p class="flip-card__desc">
+              The incomparable meaty taste of the cutlet, the freshness of the
+              greens and the crispness of the vegetables, the piquancy of the
+              sauce.
+            </p>
+            <p class="flip-card__price">
+              <span>8</span>
+              <svg width="50" height="50" class="flip-card__icon">
+                <use href="./images/sprite.svg#icon-dollar"></use>
+              </svg>
+            </p>
+          </div>
+        </div>
       </li>
-      <li class="favorite__item favorite__item--is-hidden">
-        <picture>
-          <!-- desktop scren -->
-          <source
-            srcset="
-              ./images/favorites/img6-lg_315.png 1x,
-              ./images/favorites/img6-lg_630.png 2x
-            "
-            media="(min-width: 1280px)"
-            type="image/png"
-          />
-          <!-- tableb scren -->
-          <source
-            srcset="
-              ./images/favorites/img6-md_268.png 1x,
-              ./images/favorites/img6-md_536.png 2x
-            "
-            media="(min-width: 768px)"
-            type="image/png"
-          />
-          <img
-            class="favorite__pic"
-            src="./images/favorites/img6-md_268.png"
-            alt="burger"
-            width="224"
-            height="224"
-            loading="lazy"
-          />
-        </picture>
+      <li class="favorite__item flip-card favorite__item--is-hidden">
+        <div class="flip-card__inner">
+          <picture class="flip-card__front">
+            <!-- desktop scren -->
+            <source
+              srcset="
+                ./images/favorites/img6-lg_315.png 1x,
+                ./images/favorites/img6-lg_630.png 2x
+              "
+              media="(min-width: 1280px)"
+              type="image/png"
+            />
+            <!-- tableb scren -->
+            <source
+              srcset="
+                ./images/favorites/img6-md_268.png 1x,
+                ./images/favorites/img6-md_536.png 2x
+              "
+              media="(min-width: 768px)"
+              type="image/png"
+            />
+            <img
+              class="favorite__pic"
+              src="./images/favorites/img6-md_268.png"
+              alt="burger"
+              width="224"
+              height="224"
+              loading="lazy"
+            />
+          </picture>
+          <div class="flip-card__back">
+            <svg width="50" height="50" class="flip-card__icon-flag">
+              <use href="./images/sprite.svg#icon-ukraine"></use>
+            </svg>
+            <p class="flip-card__title">Borsch</p>
+            <p class="flip-card__desc">
+              The incomparable meaty taste of the cutlet, the freshness of the
+              greens and the crispness of the vegetables, the piquancy of the
+              sauce.
+            </p>
+            <p class="flip-card__price">
+              <span>20</span>
+              <svg width="50" height="50" class="flip-card__icon">
+                <use href="./images/sprite.svg#icon-dollar"></use>
+              </svg>
+            </p>
+          </div>
+        </div>
       </li>
     </ul>
   </div>
