@@ -1,0 +1,114 @@
+.customers__section {
+  padding-top: 0;
+  padding-bottom: 0;
+  min-height: 647px;
+}
+.section__background {
+  background-image: url('../images/bg-img/img-bg2@1x_sm.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+
+  @include mq(tab) {
+    background-image: url('../images/bg-img/img-bg2@1x_md.svg');
+  }
+
+  @include mq(desk) {
+    background-image: url('../images/bg-img/img-bg2@1x_lg.svg');
+  }
+}
+.customers__section-title {
+  font-size: 28px;
+  line-height: calc(33 / 28);
+  width: 280px;
+  margin-bottom: 20px;
+  padding-top: 60px;
+
+  @include mq(tab) {
+    font-size: 42px;
+    width: 501px;
+    line-height: calc(49 / 42);
+  }
+
+  @include mq(desk) {
+    line-height: calc(49 / 42);
+    margin-bottom: 20px;
+  }
+}
+
+.customers__section-text {
+  font-size: 14px;
+  margin-bottom: 32px;
+  line-height: calc(16 / 14);
+  width: 100%;
+
+  @include mq(tab) {
+    font-size: 16px;
+    margin-bottom: 32px;
+    line-height: calc(19 / 16);
+    width: 478px;
+  }
+
+  @include mq(desk) {
+    line-height: calc(19 / 16);
+    width: 478px;
+  }
+}
+.customers__mark {
+  width: 17px;
+  height: 16px;
+}
+.customers__title {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  margin-bottom: 40px;
+
+  @include mq(tab) {
+    font-size: 18px;
+    line-height: calc(21 / 18);
+  }
+
+  @include mq(desk) {
+    font-size: 18px;
+    line-height: calc(21 / 18);
+  }
+}
+.customers__name {
+  width: 78px;
+  font-size: 14px;
+  line-height: calc(20 / 14);
+  width: 100%;
+  //   додати властивість semobold
+}
+.customers__desk {
+  width: 78px;
+  font-size: 14px;
+  line-height: calc(20 / 14);
+  width: 100%;
+}
+.customers__reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 24px;
+
+  @include mq(tab) {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  @include mq(desk) {
+    display: flex;
+    flex-direction: row;
+    gap: 139px;
+  }
+}
+.customers__item {
+  background-color: #fff;
+  width: 280px;
+
+  @include mq(tab) {
+    width: 501px;
+  }
+}
