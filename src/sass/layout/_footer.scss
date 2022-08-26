@@ -17,6 +17,16 @@
       background-image: url('../images/footer/tab_@2x.png');
     }
   }
+
+  @include mq(desk) {
+    background-image: url('../images/footer/desk_@1x.png');
+    background-position: right bottom;
+    background-size: contain;
+
+    @include mq(retina) {
+      background-image: url('../images/footer/desk_@2x.png');
+    }
+  }
 }
 
 .footer__container {
