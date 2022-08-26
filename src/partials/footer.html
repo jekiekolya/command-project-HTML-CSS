@@ -1,64 +1,70 @@
 <footer class="footer">
-  <div class="container">
+  <div class="footer__container container">
     <div class="footer__top">
       <div class="footer__logo-nav">
-        <a href="">
-          <svg class="" width="69" height="51">
+        <a class="footer__logo" href="./index.html">
+          <svg class="footer__logo-icon" width="69" height="51">
             <use href="./images/sprite.svg#icon-logo"></use>
           </svg>
         </a>
-
-        <nav class="nav footer__nav">
-          <ul class="nav__list nav__list--footer">
-            <li class="nav__item">
-              <a class="nav__link" href="">Home</a>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#hero">Home</a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="">About</a>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#offerings">Offerings</a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="">Service</a>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#menu">Menu</a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="">Menu</a>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#reviews">Reviews</a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="">Contact</a>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </nav>
       </div>
 
       <!-- Form -->
-      <h2 class="footer__form-title">Subscribe</h2>
+      <div class="footer__form">
+        <h2 class="footer__form-title">Subscribe</h2>
+        <form
+          class="footer__form-subscribe form-subscribe"
+          name="form-subscribe"
+        >
+          <div class="form-subscribe__box">
+            <input
+              class="form-subscribe__input"
+              type="email"
+              name="user-mail"
+              autocomplete="off"
+              placeholder="Enter your email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              required
+            />
+            <span class="form-subscribe__msg">
+              <svg class="" width="12" height="12">
+                <use href="./images/sprite.svg#icon-warning"></use>
+              </svg>
+              Not a valid email address (example@email.com)
+            </span>
+          </div>
 
-      <form class="form-subscribe" name="form-subscribe">
-        <input
-          class="form-subscribe__input"
-          type="email"
-          name="user-mail"
-          autocomplete="off"
-          placeholder="Enter your email"
-          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-          required
-        />
-        <span class="form-subscribe__msg">
-          <svg class="" width="12" height="12">
-            <use href="./images/sprite.svg#icon-warning"></use>
-          </svg>
-          Not a valid email address (example@email.com)
-        </span>
-        <button class="subscribe-btn footer__subscribe-btn" type="submit">
-          Subscribe
-        </button>
-      </form>
+          <button class="subscribe-btn footer__subscribe-btn" type="submit">
+            Subscribe
+          </button>
+        </form>
 
-      <p class="footer__agreement">
-        By subscribing you agree to with our
-        <span class="footer__privacy">
-          <a href="" target="_blank">Privacy Policy</a>
-        </span>
-      </p>
+        <p class="footer__agreement">
+          By subscribing you agree to with our
+          <span class="footer__privacy">
+            <a href="" target="_blank">Privacy Policy</a>
+          </span>
+        </p>
+      </div>
     </div>
 
     <div class="footer__bottom">

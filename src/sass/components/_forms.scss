@@ -1,57 +1,70 @@
 .form-subscribe {
   display: flex;
-}
 
-.form-subscribe__input {
-  padding: 12px;
-  min-width: 279px;
-  min-height: 42px;
-  margin-bottom: 4px;
-  position: relative;
+  .form-subscribe__box {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 
-  font-size: 12px;
-  color: var(--dark-grey);
+    @include mq(mob-only) {
+      margin-bottom: 1px;
+    }
 
-  border-radius: 30px;
-  transition: border var(--cubic);
-
-  &:focus-visible {
-    outline: none;
+    @include mq(tab) {
+      margin-bottom: 4px;
+    }
   }
 
-  &:placeholder-shown {
-    border: 1px solid var(--yellow-main);
+  .form-subscribe__input {
+    padding: 13px;
+    min-width: 279px;
+
+    min-height: 42px;
+    margin-bottom: 4px;
+    position: relative;
+
+    height: 100%;
+
+    font-size: 12px;
+    color: var(--dark-grey);
+
+    border-radius: 30px;
+    transition: border var(--cubic);
+
+    &:focus-visible {
+      outline: none;
+    }
+
+    &:placeholder-shown {
+      border: 1px solid var(--yellow-main);
+    }
+
+    &:not(:placeholder-shown):valid {
+      border: 1px solid var(--dark-green);
+    }
+
+    &:not(:placeholder-shown):invalid {
+      border: 1px solid var(--warning-color);
+    }
+
+    &:not(:placeholder-shown):invalid + .form-subscribe__msg {
+      opacity: 1;
+    }
+    .subscribe & {
+      margin-right: 30px;
+      min-width: 395px;
+    }
   }
 
-  &:not(:placeholder-shown):valid {
-    border: 1px solid var(--dark-green);
-  }
+  .form-subscribe__msg {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 10px;
+    position: absolute;
 
-  &:not(:placeholder-shown):invalid {
-    border: 1px solid var(--warning-color);
-  }
-
-  &:not(:placeholder-shown):invalid + .form-subscribe__msg {
-    opacity: 1;
-  }
-  .subscribe & {
-    margin-right: 30px;
-    min-width: 395px;
-  }
-}
-
-.form-subscribe__msg {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 10px;
-  position: absolute;
-
-  color: var(--warning-color);
-  opacity: 0;
-  transition: opacity var(--cubic);
-
-  @include mq(mob-only) {
-    margin-bottom: 1px;
+    color: var(--warning-color);
+    opacity: 0;
+    transition: opacity var(--cubic);
   }
 }
