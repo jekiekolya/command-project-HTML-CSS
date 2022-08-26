@@ -20,7 +20,7 @@
 
   @include mq(desk) {
     background-image: url('../images/footer/desk_@1x.png');
-    background-position: right bottom;
+    background-position: bottom;
     background-size: contain;
 
     @include mq(retina) {
@@ -132,6 +132,11 @@
     text-underline-position: under;
   }
 
+  @include mq(tab) {
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+
   @include mq(desk) {
     color: var(--main-txt-color);
   }
@@ -141,6 +146,10 @@
 .footer__form {
   display: flex;
   flex-direction: column;
+
+  @include mq(mob-only) {
+    width: 100%;
+  }
 }
 
 .footer__form-title {
