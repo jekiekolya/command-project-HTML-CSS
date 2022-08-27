@@ -70,7 +70,7 @@
 .offerings__features {
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 84px;
   margin-bottom: 28px;
 
   @include mq(tab) {
@@ -106,18 +106,19 @@
 
 .offerings__text {
   font-size: 14px;
-  margin-bottom: 28px;
+  margin-bottom: 84px;
   line-height: calc(16 / 14);
   width: 100%;
 
   @include mq(tab) {
     font-size: 16px;
-    margin-bottom: 40px;
+    margin-bottom: 96px;
     line-height: calc(19 / 16);
     width: 526px;
   }
 
   @include mq(desk) {
+    margin-bottom: 98px;
     line-height: calc(24 / 16);
     width: 526px;
   }
@@ -151,25 +152,31 @@
   }
 }
 
-.offerings__wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.offerings__item {
+  position: relative;
+}
+
+.offerings__item::before {
+  content: '';
+  position: absolute;
+  top: -57px;
+  left: 0;
   width: 48px;
   height: 48px;
   background-color: var(--pure-white);
   border-radius: 50%;
-  margin-bottom: 8px;
+  background-image: url('../images/svg-offer/icon-deliv.svg');
+  background-position: center;
+  background-size: contain;
 
   @include mq(desk) {
-    margin-bottom: 10px;
+    top: -59px;
   }
 }
 
-.offerings__icon {
-  display: block;
-  width: 32px;
-  height: 32px;
+.offerings__item--order::before {
+  content: '';
+  background-image: url('../images/svg-offer/icon-order.svg');
 }
 
 .offerings__footer {
