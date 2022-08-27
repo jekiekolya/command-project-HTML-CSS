@@ -136,7 +136,7 @@
     opacity: 0;
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -15%;
     left: 0;
     width: 100%;
     height: 2px;
@@ -146,7 +146,7 @@
     transition: opacity var(--cubic), transform var(--cubic) 100ms;
 
     @include mq(tab) {
-      bottom: 32%;
+      bottom: 29%;
     }
   }
 
