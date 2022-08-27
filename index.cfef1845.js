@@ -1,0 +1,2 @@
+var slideIndex=1;function plusSlide(){showSlides(slideIndex+=1)}function minusSlide(){showSlides(slideIndex-=1)}function currentSlide(e){showSlides(slideIndex=e)}function showSlides(e){var d,l=document.getElementsByClassName("slider__item");for(e>l.length&&(slideIndex=1),e<1&&(slideIndex=l.length),d=0;d<l.length;d++)l[d].style.display="none";l[slideIndex-1].style.display="block"}showSlides(slideIndex);
+//# sourceMappingURL=index.cfef1845.js.map
