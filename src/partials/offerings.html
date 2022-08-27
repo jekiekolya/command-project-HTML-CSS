@@ -47,23 +47,13 @@
 
         <ul class="offerings__features">
           <li class="offerings__item">
-            <div class="offerings__wrapper">
-              <svg class="offerings__icon">
-                <use href="./images/sprite.svg#icon-deliv"></use>
-              </svg>
-            </div>
             <h4 class="offerings__title">Fastest Delivery</h4>
             <p class="offerings__content-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Suspendisse varius enim in eros.
             </p>
           </li>
-          <li class="offerings__item">
-            <div class="offerings__wrapper">
-              <svg class="offerings__icon">
-                <use href="./images/sprite.svg#icon-order"></use>
-              </svg>
-            </div>
+          <li class="offerings__item offerings__item--order">
             <h4 class="offerings__title">Easy To Order</h4>
             <p class="offerings__content-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -71,24 +61,28 @@
             </p>
           </li>
         </ul>
-        <button
-          class="offerings__button secondary-btn"
-          type="button"
-          data-modal-open-order
-        >
-          Order now
-        </button>
-        <a
-          class="offerings__link"
-          href=""
-          target="_blank"
-          rel="noreferrer noopener"
-          >Read More
-          <svg class="offerings__link-icon">
-            <use href="./images/sprite.svg#icon-arrow-left"></use>
-          </svg>
-        </a>
+        <div class="offerings__footer">
+          <button
+            class="offerings__button secondary-btn"
+            type="button"
+            data-modal-open-order
+          >
+            Order now
+          </button>
+          <a
+            class="offerings__link"
+            href=""
+            target="_blank"
+            rel="noreferrer noopener"
+            >Read More
+            <svg class="offerings__link-icon">
+              <use href="./images/sprite.svg#icon-arrow-left"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
   </div>
 </section>
+<button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
+<script src="./js/scrollup-btn.js"></script>
