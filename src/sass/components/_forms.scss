@@ -1,5 +1,6 @@
 .form-subscribe {
   display: flex;
+  flex-wrap: wrap;
 
   .subscribe & {
     display: block;
@@ -27,10 +28,10 @@
   .form-subscribe__input {
     padding: 13px;
     min-width: 279px;
+    position: relative;
 
     min-height: 42px;
     margin-bottom: 4px;
-    position: relative;
 
     height: 100%;
 
@@ -77,17 +78,24 @@
 .subscribe .form-subscribe__input {
   display: flex;
   width: 100%;
-  max-width: 395px;
+  width: 100%;
   height: 42px;
+  position: relative;
   margin-bottom: 20px;
 
   @include mq(tab) {
     display: inline;
     margin-right: 18px;
+    max-width: 395px;
   }
 
   @include mq(desk) {
     display: inline;
     margin-right: 32px;
+    max-width: 395px;
   }
+}
+
+.subscribe .form-subscribe__msg {
+  margin-top: -16px;
 }
