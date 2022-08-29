@@ -66,3 +66,17 @@
     background-color: var(--yellow-main);
   }
 }
+.subscribe-btn-def {
+  @extend %btn;
+  width: 102px;
+  height: 42px;
+  padding: 10px 22px;
+
+  @include mq(tab) {
+    margin-top: 0;
+  }
+
+  @include mq(desk) {
+    margin-top: 0;
+  }
+}
