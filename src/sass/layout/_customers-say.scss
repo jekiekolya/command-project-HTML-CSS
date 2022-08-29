@@ -1,15 +1,13 @@
 .customers__section {
-  padding: 60px 0;
   min-height: 320px;
 
   @include mq(tab) {
     min-height: 544px;
-    padding-bottom: 120px;
+    padding-bottom: 60px;
   }
 
   @include mq(desk) {
     min-height: 647px;
-    padding-bottom: 200px;
   }
 }
 .section__background {
