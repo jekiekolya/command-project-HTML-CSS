@@ -161,6 +161,10 @@
   }
 }
 
+.order-form__input::placeholder {
+  color: rgba(80, 80, 80, 0.4);
+}
+
 .order-form__textarea {
   border: 2px solid var(--yellow-main);
   border-radius: 10px;
@@ -173,6 +177,10 @@
     border: 2px solid var(--dark-green);
     outline: none;
   }
+}
+
+.order-form__textarea::placeholder {
+  color: rgba(80, 80, 80, 0.4);
 }
 
 .order-button {
