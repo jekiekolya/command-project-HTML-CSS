@@ -40,7 +40,7 @@
 }
 
 // Footer's first block
-.footer__top {
+.footer-top {
   display: flex;
   align-items: baseline;
   flex-wrap: wrap;
@@ -66,7 +66,7 @@
 }
 
 // Logo-nav
-.footer__logo-nav {
+.footer-top__logo-nav {
   display: flex;
   align-items: flex-start;
   width: 100%;
@@ -82,11 +82,11 @@
   }
 }
 
-.footer__logo {
+.footer-top__logo {
   display: block;
 }
 
-.footer__logo-icon {
+.footer-top__logo-icon {
   display: block;
 }
 
