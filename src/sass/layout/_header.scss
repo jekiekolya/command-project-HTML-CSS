@@ -75,10 +75,15 @@
   border: none;
   padding: 0;
   background-color: transparent;
-
+  fill: #7eb101;
+  transition: fill var(--cubic);
   @include mq(tab) {
     display: none;
   }
+}
+
+.mobile-menu.is-open + .header__burger {
+  fill: var(--yellow-main);
 }
 
 .header__burger-icon {
