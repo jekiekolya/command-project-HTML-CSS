@@ -18,7 +18,7 @@
 .section__bg {
   background-image: url('../images/bg-img/img-bg1@1x_sm.svg');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100vw 100%;
   background-position: center;
 
   @include mq(tab) {
@@ -211,6 +211,7 @@
   height: 40px;
   border-radius: 50%;
   cursor: pointer;
+  text-align: center;
   transition: box-shadow var(--cubic), background-color var(--cubic);
 }
 
