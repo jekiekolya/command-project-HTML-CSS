@@ -29,9 +29,13 @@
 
   background-color: var(--main-bg-color);
 
-  padding: 20px 40px;
+  padding: 10px 20px;
 
   border-radius: 10% 0 10% 10%;
+
+  @include mq(tab) {
+    padding: 20px 40px;
+  }
 
   @include mq(desk) {
     min-height: 581px;
@@ -70,11 +74,18 @@
   font-size: 28px;
   line-height: 1.17;
   margin-bottom: 20px;
+
+  @include mq(mob-only) {
+    font-size: 18px;
+    line-height: 1.14;
+    margin-bottom: 10px;
+  }
 }
 
 .menu-thumb {
   display: flex;
   justify-content: space-between;
+  max-width: 550;
 
   @include mq(mob-only) {
     flex-wrap: wrap;
@@ -108,6 +119,9 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  @include mq(mob-only) {
+    max-width: 65px;
+  }
 }
 
 .menu-thumb__photo {
@@ -116,9 +130,13 @@
   margin-bottom: 10px;
 
   @include mq(mob-only) {
-    width: 68px;
-    height: 68px;
+    width: 50px;
+    height: 50px;
   }
+}
+
+.menu-thumb__dish {
+  font-size: 14px;
 }
 
 .menu-thumb__input {
@@ -140,6 +158,7 @@
 
 .order-form__text {
   padding-left: 13px;
+  font-size: 14px;
 }
 
 .order-form__textarea:not(:placeholder-shown),
@@ -168,8 +187,14 @@
 .order-form__textarea {
   border: 2px solid var(--yellow-main);
   border-radius: 10px;
-  padding: 10px 15px;
+  padding: 5px 7px;
   resize: none;
+  height: 70px;
+
+  @include mq(tab) {
+    height: 120px;
+    padding: 10px 15px;
+  }
 
   transition: border var(--cubic);
 
@@ -184,11 +209,18 @@
 }
 
 .order-button {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 25px;
   height: 50px;
   width: 150px;
   margin-top: 15px;
   margin-left: auto;
   margin-right: auto;
+
+  @include mq(mob-only) {
+    font-size: 22px;
+    height: 40px;
+  }
 }
