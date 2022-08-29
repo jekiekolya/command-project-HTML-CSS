@@ -18,66 +18,98 @@
           Order now
         </button>
       </div>
-      <div>
-        <picture>
-          <source
-            srcset="
-              ./images/img-hero/border-lg_580.png  1x,
-              ./images/img-hero/border-lg_1160.png 2x
-            "
-            media="(min-width: 1280px)"
-            type="image/png"
-          />
-          <source
-            srcset="
-              ./images/img-hero/border-tab_320.png 1x,
-              ./images/img-hero/border-tab_640.png 2x
-            "
-            media="(min-width: 768px)"
-            type="image/png"
-          />
-          <img
-            class="hero__border"
-            src="./images/img-hero/border-lg_580.png"
-            alt="Yellow border"
-            loading="lazy"
-          />
-        </picture>
-        <picture>
-          <source
-            srcset="
-              ./images/img-hero/img1-lg_528.png  1x,
-              ./images/img-hero/img1-lg_1056.png 2x
-            "
-            media="(min-width: 1280px)"
-            type="image/png"
-          />
-          <source
-            srcset="
-              ./images/img-hero/img1-md_292.png 1x,
-              ./images/img-hero/img1-md_584.png 2x
-            "
-            media="(min-width: 768px)"
-            type="image/png"
-          />
-          <img
-            class="hero__meal"
-            src="./images/img-hero/img1-lg_528.png"
-            alt="Meal"
-            loading="lazy"
-          />
-        </picture>
-      </div>
-      <div class="hero__arrow-left">
-        <svg class="hero__icon">
-          <use href="./images/sprite.svg#icon-arrow-left"></use>
-        </svg>
-      </div>
-      <div class="hero__arrow-right">
-        <svg class="hero__icon">
-          <use href="./images/sprite.svg#icon-arrow-right"></use>
-        </svg>
+
+      <div class="slider">
+        <div class="slider__item">
+          <picture>
+            <source
+              srcset="
+                ./images/img-hero/img1-lg_528.png  1x,
+                ./images/img-hero/img1-lg_1056.png 2x
+              "
+              media="(min-width: 1280px)"
+              type="image/png"
+            />
+            <source
+              srcset="
+                ./images/img-hero/img1-md_292.png 1x,
+                ./images/img-hero/img1-md_584.png 2x
+              "
+              media="(min-width: 768px)"
+              type="image/png"
+            />
+            <img
+              class="slider__img"
+              src="./images/img-hero/img1-lg_528.png"
+              alt="Meal"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+
+        <div class="slider__item">
+          <picture>
+            <source
+              srcset="
+                ./images/img-hero/img2-lg_528.png  1x,
+                ./images/img-hero/img2-lg_1056.png 2x
+              "
+              media="(min-width: 1280px)"
+              type="image/png"
+            />
+            <source
+              srcset="
+                ./images/img-hero/img2-md_292.png 1x,
+                ./images/img-hero/img2-md_584.png 2x
+              "
+              media="(min-width: 768px)"
+              type="image/png"
+            />
+            <img
+              class="slider__img"
+              src="./images/img-hero/img2-lg_528.png"
+              alt="Meal"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+
+        <div class="slider__item">
+          <picture>
+            <source
+              srcset="
+                ./images/img-hero/img3-lg_528.png  1x,
+                ./images/img-hero/img3-lg_1056.png 2x
+              "
+              media="(min-width: 1280px)"
+              type="image/png"
+            />
+            <source
+              srcset="
+                ./images/img-hero/img3-md_292.png 1x,
+                ./images/img-hero/img3-md_584.png 2x
+              "
+              media="(min-width: 768px)"
+              type="image/png"
+            />
+            <img
+              class="slider__img"
+              src="./images/img-hero/img3-lg_528.png"
+              alt="Meal"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <a class="slider__prev" onclick="minusSlide()">
+          <svg class="slider__icon">
+            <use href="./images/sprite.svg#icon-arrow-right"></use></svg
+        ></a>
+        <a class="slider__next" onclick="plusSlide()"
+          ><svg class="slider__icon">
+            <use href="./images/sprite.svg#icon-arrow-left"></use></svg
+        ></a>
       </div>
     </div>
   </div>
 </section>
+<script src="./js/slider.js"></script>

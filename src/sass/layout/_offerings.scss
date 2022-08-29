@@ -151,42 +151,70 @@
   }
 }
 
-.offerings__wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.offerings__item::before {
+  content: '';
+  display: block;
+  margin-bottom: 8px;
   width: 48px;
   height: 48px;
   background-color: var(--pure-white);
   border-radius: 50%;
-  margin-bottom: 8px;
-
-  @include mq(desk) {
-    margin-bottom: 10px;
-  }
+  background-image: url('../images/svg-offer/icon-deliv.svg');
+  background-position: center;
+  background-size: contain;
 }
 
-.offerings__icon {
-  display: block;
-  width: 32px;
-  height: 32px;
+.offerings__item--order::before {
+  content: '';
+  background-image: url('../images/svg-offer/icon-order.svg');
+}
+
+.offerings__footer {
+  display: flex;
+  align-items: baseline;
 }
 
 .offerings__button {
   @extend %btn;
   width: 106px;
-  margin-right: 20px;
+  margin-right: 21px;
 }
 
 .offerings__link {
-  display: inline-block;
-  position: relative;
+  display: flex;
+  align-items: baseline;
   font-size: 13.67px;
   list-style: calc(20 / 13.67);
   color: var(--pure-black);
 }
 
 .offerings__link-icon {
-  width: 9px;
-  height: 9px;
+  display: block;
+  width: 5px;
+  height: 8.85px;
+  margin-left: 7.75;
+}
+
+// Scrollup-btn
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: var(--dark-green);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: box-shadow var(--cubic), background-color var(--cubic);
+}
+
+#myBtn:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+  background-color: var(--dark-green-hover);
 }
