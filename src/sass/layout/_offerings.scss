@@ -211,11 +211,16 @@
   height: 40px;
   border-radius: 50%;
   cursor: pointer;
-  text-align: center;
   transition: box-shadow var(--cubic), background-color var(--cubic);
 }
 
 #myBtn:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
   background-color: var(--dark-green-hover);
+}
+
+.mybtn-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
