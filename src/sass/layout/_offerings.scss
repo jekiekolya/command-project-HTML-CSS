@@ -54,9 +54,11 @@
   margin-bottom: 60px;
 
   @include mq(tab) {
+    width: 704px;
   }
 
   @include mq(desk) {
+    width: 550px;
     margin-bottom: 0;
   }
 }
