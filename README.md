@@ -1,4 +1,4 @@
-## Command project - Tabasco Team - (HTML, CSS) [Presentation](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#changing-a-remote-repositorys-url).
+## Command project - Tabasco Team - (HTML, CSS) [Presentation](https://docs.google.com/presentation/d/1oDPeR802GauYpDRPnQz0iEwiY6eX14HbmVALHijAtBM/edit#slide=id.g1213a43354d_0_694).
 
 ![GitHub actions settings](./assets/TABASCO.jpg)
 ![GitHub actions settings](<./assets/TABASCO%20(1).jpg>)
